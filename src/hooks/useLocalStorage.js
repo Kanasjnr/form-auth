@@ -6,6 +6,12 @@ const getLocalValue = (key, initValue) => {
     if (typeof window === 'undefined') return initValue
 
     //If A value is already stored
+
+    const localValue = JSON.parse(localStorage.getItem(key))
+
+    if (localValue) return localValue
+
+    // return result of a function
 }
 
 
