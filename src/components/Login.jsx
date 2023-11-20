@@ -19,6 +19,7 @@ function Login() {
   const [user, resetUser, userAttribs] = useInput("user", ''); //useState("");
   const [pwd, setPwd] = useState("");
   const [errMsg, setErrMsg] = useState("");
+  const [check, toogleCheck] = useToggle('persist', false)
 
   useEffect(() => {
     userRef.current.focus();
