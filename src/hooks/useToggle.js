@@ -5,7 +5,7 @@ const useToggle = (key, initValue) => {
 
   const toggle = (value) => {
     setValue(prev => {
-        return typeof value
+        return typeof value === 'boolean' ? value 
     })
   };
 };
