@@ -17,7 +17,7 @@ function Login() {
    const userRef = useRef();
    const errRef = useRef();
 
-   const [user, resetUser, setAttribs] =useInput('')//useState(""); 
+   const [user, resetUser, userAttribs] =useInput('')//useState(""); 
    const [pwd, setPwd] = useState("");
    const [errMsg, setErrMsg] = useState("");
 
@@ -91,7 +91,7 @@ function Login() {
                      id="username"
                      ref={userRef}
                      autoComplete="off"
-                     
+                     {...userAttribs}
                      required
                   />
 
