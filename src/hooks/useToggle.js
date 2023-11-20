@@ -8,8 +8,7 @@ const useToggle = (key, initValue) => {
       return typeof value === "boolean" ? value : !prev;
     });
   };
-  return[value, toggle]
+  return [value, toggle];
 };
 
-
-export default useToggle
+export default useToggle;
