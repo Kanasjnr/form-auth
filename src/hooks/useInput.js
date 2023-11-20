@@ -12,4 +12,4 @@ const useInput = (initValue) => {
   return [value, reset, attributeObj];
 };
 
-export default useInput
+export default useInput;
