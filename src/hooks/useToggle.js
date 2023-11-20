@@ -8,4 +8,5 @@ const useToggle = (key, initValue) => {
       return typeof value === "boolean" ? value : !prev;
     });
   };
+  return[value, toggle]
 };
