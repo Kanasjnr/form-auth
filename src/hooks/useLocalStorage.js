@@ -5,11 +5,9 @@ const useLocalStorage = (key, initValue) => {
     JSON.parse(localStorage.getItem(key)) || initValue
   );
 
-    useEffect(() => {
-        localStorage.setItem(key,JSON.stringify(value))
-    },[key,value])
-
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
 };
 
-
-export default useLocalStorage
+export default useLocalStorage;
